@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import logo from './logo.svg';
 import './css/index.css'
 import './css/reset.css'
@@ -6,9 +7,17 @@ import './css/double-date.css'
 import {BrowserRouter as Router,Route,Link,Redirect} from 'react-router-dom';
 import Index from './components/index'
 
+import './App.css';
+import Special from './special';
+import Spbieshu from './spbieshu';
+import Spsearch from './spsearch';
+import {BrowserRouter as Router,Route,Redirect,Switch} from 'react-router-dom'
+
+
 class App extends Component {
   render() {
     return (
+
       <div>
         <Router>
           <Route path="/" component={Index}></Route>
@@ -127,6 +136,16 @@ class App extends Component {
               </div>
             </div>
       </div>
+
+      <Router>
+					    <Switch>
+							<Route path="/special" component={Special}></Route>
+							<Route path="/spsearch" component={Spsearch}></Route>
+							<Route path="/spbieshu" component={Spbieshu}></Route>
+							<Redirect to="/special"/>
+							</Switch>
+				</Router>
+
     );
   }
 }
