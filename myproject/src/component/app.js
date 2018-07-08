@@ -2,6 +2,8 @@ import React from 'react';
 import {BrowserRouter as Router,Route,Link,Redirect} from 'react-router-dom';
 import Find from './find'
 import Hedetail from './hedetail'
+import Sqyd from './sqyd'
+
 import $ from 'jquery'
 import '../css/find.css'
 import '../mock/data'
@@ -39,6 +41,8 @@ class App extends React.Component{
 						
 						<Route path="/find" component={Find}></Route>
 						<Route path="/hedetail/:id" component={Hedetail}></Route>
+						<Route path="/sqyd" component={Sqyd}></Route>
+
 
 					
 					</div>
