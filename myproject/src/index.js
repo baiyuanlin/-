@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import App from './App';
+import Special from './special';
 import './index.css';
 // import Find from './component/find';
 import App from './component/app';
