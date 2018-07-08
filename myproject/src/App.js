@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './css/index.css'
 import './css/reset.css'
 import './css/double-date.css'
-import {BrowserRouter as Router,Route,Link,Redirect} from 'react-router-dom';
+
 import Index from './components/index'
 
 import './App.css';
@@ -16,17 +16,16 @@ import Hedetail from './component/hedetail'
 import Sqyd from './component/sqyd'
 
 
-import {BrowserRouter as Router,Route,Redirect,Switch} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Redirect,Switch,Link,IndexRoute} from 'react-router-dom'
 
 
 class App extends Component {
   render() {
     return (
 <div>
+<Router>
       <div>
-        <Router>
-          <Route path="/" component={Index}></Route>
-        </Router>
+			
        <div className="header1">
                     <div className="header-left1">
                     
@@ -36,7 +35,7 @@ class App extends Component {
                     <ul className="header-nav1">
                         <li><a href="">首页</a></li>
                         <li><a href="">特色短租</a></li>
-                        <li><a href="">发现</a></li>
+                        <li><Link to="/find">发现</Link></li>
                         <li><a href="">手机木鸟</a>
                             <img src={require("./img/index34.png")}/>
                         </li>
@@ -50,9 +49,41 @@ class App extends Component {
                         </div>
                     </div>
                </div>
-               {
-                 this.props.children
-               }
+             
+							 
+	
+						
+					<div>
+					    <Switch>
+							<Route path="/special" component={Special}></Route>
+							<Route path="/spsearch" component={Spsearch}></Route>
+							<Route path="/spbieshu" component={Spbieshu}></Route>
+					
+
+						
+						
+				
+				
+         			 <Route path="/index" component={Index}></Route>
+								{/* <IndexRoute component={Index}/> */}
+										<Redirect to="/index"/>
+         			 {/* <Route path="/" component={Index}></Route> */}
+       		
+						
+					
+						
+						
+						<Route path="/find" component={Find}></Route>
+						<Route path="/hedetail/:id" component={Hedetail}></Route>
+					
+						<Route path="/sqyd" component={Sqyd}></Route>
+						</Switch>
+					
+					</div>
+			
+				
+
+
                <div className="footer">
                   <div className="footer-top">
                     <div className="weibo"></div>
@@ -141,31 +172,7 @@ class App extends Component {
               </div>
             </div>
       </div>
-		
-      <Router>
-					<div>
-					    <Switch>
-							<Route path="/special" component={Special}></Route>
-							<Route path="/spsearch" component={Spsearch}></Route>
-							<Route path="/spbieshu" component={Spbieshu}></Route>
-							{/* <Redirect to="/special"/> */}
-							</Switch>
-				
-				
-						
-					
-						
-						
-						<Route path="/find" component={Find}></Route>
-						<Route path="/hedetail/:id" component={Hedetail}></Route>
-					
-						<Route path="/sqyd" component={Sqyd}></Route>
-
-					
-					</div>
-			
-				</Router>
-
+			</Router>
 </div>
 		)
 	
