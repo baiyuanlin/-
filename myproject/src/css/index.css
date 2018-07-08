@@ -868,3 +868,240 @@ li{
     display:inline;
     margin-right:35px;    
 }
+#spli{
+	background: #E7E1CD;
+	position: fixed;
+	right:50px;
+	bottom:200px;
+    background: #dddddd;
+    z-index: 9999;
+}
+#spli li{
+	width: 40px;
+	height: 40px;
+	z-index: 9999;
+}
+
+#spli li:first-child{
+	background: #fe9484;
+	display: flex;
+	justify-content:center;
+	position: relative;
+}
+#list1{
+	position: absolute;
+	left:-35px;
+	width:25px;
+	height:68px;
+	color:#fff;
+	background: #fe9484;
+	display: flex;
+	display: none;
+}
+#list1 span{
+	width:12px;
+	height:65px;
+	font-size: 10px;
+	display: block;
+	margin-left:5px;
+}
+/*#spli li:first-child:hover #list1{
+	display: block;
+}*/
+#spli li:first-child img{
+	align-self: center;
+}
+#spli li:nth-child(2){
+	background:url(../spimg/mumu.png) no-repeat 8px 8px;
+	position: relative;
+}
+#list2{
+	position: absolute;
+	left:-175px;
+	width: 140px;
+    height: 110px;
+	background: #444444;
+    border-radius: 3px;
+    padding: 0 10px 14px;
+    top: 0;
+    display: none;
+}
+#list2 h3{
+	font-size: 16px;
+	color:dodgerblue;
+	margin-top:15px;
+}
+#list2 p{
+	color:#CCCCCC;
+	font-size: 11px;
+	display: block;
+	margin:15px 0;
+}
+#list2 a{
+	background:dodgerblue;
+	margin-top:10px;
+	font-size: 13px;
+	color:#fff;
+	padding:5px;
+}
+/*#spli li:nth-child(2):hover #list2{
+	display: block;
+}*/
+#spli li:nth-child(3){
+	background:url(../spimg/mumu.png) no-repeat 8px -35px;
+	position: relative;
+}
+#list3{
+	position: absolute;
+	left:-175px;
+	width: 140px;
+    height: 110px;
+	background: #444444;
+    border-radius: 3px;
+    padding: 0 10px 14px;
+    top: 0;
+    display: none;
+}
+#list3 h3{
+	font-size: 16px;
+	color:dodgerblue;
+	margin-top:15px;
+}
+#list3 p{
+	color:#CCCCCC;
+	font-size: 11px;
+	display: block;
+	margin:10px 0;
+}
+#list3 a{
+	background:dodgerblue;
+	margin-top:10px;
+	font-size: 13px;
+	color:#fff;
+	padding:5px;
+}
+/*#spli li:nth-child(3):hover #list3{
+	display: block;
+}*/
+#spli li:nth-child(4){
+	background:url(../spimg/mumu.png) no-repeat 8px -74px;
+	position: relative;
+}
+#list4{
+	position: absolute;
+	left:-175px;
+	width: 140px;
+    height: 110px;
+	background: #444444;
+    border-radius: 3px;
+    padding: 0 10px 14px;
+    top: 0;
+    display: none;
+}
+#list4 h3{
+	font-size: 16px;
+	color:dodgerblue;
+	margin-top:15px;
+}
+#list4 p{
+	color:#CCCCCC;
+	font-size: 11px;
+	display: block;
+	margin:10px 0;
+}
+#list4 a{
+	background:dodgerblue;
+	margin-top:10px;
+	font-size: 13px;
+	color:#fff;
+	padding:5px;
+}
+/*#spli li:nth-child(4):hover #list4{
+	display: block;
+}*/
+#spli li:nth-child(5){
+	background:url(../spimg/mumu.png) no-repeat 8px -127px;
+	position: relative;
+}
+
+#side{
+	width:100%;
+	height:168px;
+	position: fixed;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background:rgba(0,0,0,.7);
+    display: none;
+    z-index: 9999;
+}
+#side-t{
+	width:1200px;
+	height:168px;
+	margin:0 auto;
+    position: relative;
+    z-index:1;
+}
+#side-t img:first-child{
+	position: absolute;
+	left:80px;
+	bottom: 20px;
+	display: block;
+}
+#side-y{
+	position: absolute;
+	top:0;
+    right: 70px;
+    width: 375px;
+    height: 168px;
+    background: #11172e;
+} 
+#side-y #side-y1{
+	position: absolute;
+	top:160px;
+	left:-50px;
+} 
+#side-y #side-y1 img{
+	display: block;
+}
+#side-y2{
+	height: 168px;
+	position: absolute;
+	top:25px;
+	right:50px;
+}
+#side-y2 h4{
+	font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+#side-y2 a{
+	color:#fff;
+	display: block;
+    width: 110px;
+    height: 28px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 10px;
+}  
+#side-t #close-right{
+	position: absolute;
+	right:10%;
+	top:50px;
+	display: block;
+	cursor: pointer;
+}
+#left-down{
+	position: fixed;
+    bottom: 240px;
+    left:0;
+    z-index: 1100;
+    width: 120px;
+    height: 74px;
+    cursor: pointer;
+}

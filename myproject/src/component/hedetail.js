@@ -5,7 +5,7 @@ import find29 from '../img/find29.jpg';
 import find30 from '../img/find30.jpg';
 import find31 from '../img/find31.jpg';
  import { Icon } from 'antd';
-
+import $ from 'jquery'
 
 class Hedetail extends React.Component{
     constructor(props) {
