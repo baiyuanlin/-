@@ -99,7 +99,7 @@ body{
     border-radius: 3px 3px 3px 3px;
     text-align: center;
     font: 14px/30px "宋体";
- 
+    border-right: 1px solid #888;
 }
 #spnav li a:hover{
 	background: orangered;
