@@ -14,12 +14,28 @@ import Spsearch from './spsearch';
 import Find from './component/find'
 import Hedetail from './component/hedetail'
 import Sqyd from './component/sqyd'
-
-
+import $ from 'jquery'
+import './mock/data'
 import {BrowserRouter as Router,Route,Redirect,Switch,Link,IndexRoute} from 'react-router-dom'
 
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		
+	}
+	componentDidMount(){
+		$.ajax({
+			type:"get",
+			url:"http://www.baidu.com/api/a",
+			async:true,
+			dataType:"json",
+			success:function(data){
+				console.log(data)
+			}
+
+		})
+	}
   render() {
     return (
 <div>
@@ -33,10 +49,10 @@ class App extends Component {
                         <img src={require("./img/index55.png")}/>
                     </div>
                     <ul className="header-nav1">
-                        <li><a href="">首页</a></li>
-                        <li><a href="">特色短租</a></li>
+                        <li><Link to="/index">首页</Link></li>
+                        <li><Link to="/special">特色短租</Link></li>
                         <li><Link to="/find">发现</Link></li>
-                        <li><a href="">手机木鸟</a>
+                        <li><Link to="/spsearch">手机木鸟</Link>
                             <img src={require("./img/index34.png")}/>
                         </li>
                     </ul>
@@ -54,29 +70,39 @@ class App extends Component {
 	
 						
 					<div>
+						
 					    <Switch>
+							{/* <Route component={Index}></Route> */}
+							<Route path="/index" component={Index}>
+								{/* <Redirect from="/" to="/index"></Redirect>    */}
+							</Route>
+
+							
 							<Route path="/special" component={Special}></Route>
 							<Route path="/spsearch" component={Spsearch}></Route>
 							<Route path="/spbieshu" component={Spbieshu}></Route>
+							<Route path="/find" component={Find}></Route>
+							<Route path="/hedetail/:id" component={Hedetail}></Route>
+
+							<Route path="/sqyd" component={Sqyd}></Route>
 					
+							
+						
 
 						
 						
 				
 				
-         			 <Route path="/index" component={Index}></Route>
+         			
 								{/* <IndexRoute component={Index}/> */}
-										<Redirect to="/index"/>
+									
          			 {/* <Route path="/" component={Index}></Route> */}
        		
 						
 					
 						
 						
-						<Route path="/find" component={Find}></Route>
-						<Route path="/hedetail/:id" component={Hedetail}></Route>
 					
-						<Route path="/sqyd" component={Sqyd}></Route>
 						</Switch>
 					
 					</div>
