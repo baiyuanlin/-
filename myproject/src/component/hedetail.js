@@ -4,7 +4,7 @@ import '../css/find.css'
 import find29 from '../img/find29.jpg';
 import find30 from '../img/find30.jpg';
 import find31 from '../img/find31.jpg';
-
+ import { Icon } from 'antd';
 
 
 class Hedetail extends React.Component{
@@ -13,6 +13,7 @@ class Hedetail extends React.Component{
         
 
     }
+   
     render(){
         return(
             <div>
@@ -65,10 +66,12 @@ class Hedetail extends React.Component{
                                         <a className="hemz">李莉</a>
                                     </div>
                                     <div className="heicon">
-                                        <span>图片</span>
-                                        <span>图片</span>
+                                    <span> <Icon type="user" style={{ fontSize: 22, color: 'red' }} /></span>
+                                        <span> <Icon type="solution" style={{ fontSize: 22, color: 'red' }} /></span>
+                                       
+                                      
 
-                                        <span>图片</span>
+                                       <span> <Icon type="tablet" style={{ fontSize: 22, color: 'red' }} /></span>
 
                                     </div>
                                     <div className="hehpl">
