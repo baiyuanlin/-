@@ -5,7 +5,6 @@
   "dependencies": {
     "antd-init": "^2.0.6",
     "babel-plugin-import": "^1.8.0",
-    "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
@@ -17,8 +16,10 @@
   },
   "devDependencies": {
     "antd": "^3.6.5",
+    "react-bmap": "^1.0.74",
     "jquery": "^3.3.1",
     "mockjs": "^1.0.1-beta3",
+    "react": "^16.4.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0"

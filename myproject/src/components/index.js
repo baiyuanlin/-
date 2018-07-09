@@ -31,6 +31,8 @@ class Index extends Component {
         super(props)
     }
 componentDidMount(){
+    // 数据
+   
     var oimg=document.getElementsByClassName('bt-img')[0];
     var img=oimg.children;
     var oul=document.getElementsByClassName('bt-anv')[0];
@@ -408,7 +410,7 @@ componentDidMount(){
         return (
             
     <div>
-        <Router>
+        
             <div>
                
                <div className="banner-center">
@@ -486,7 +488,7 @@ componentDidMount(){
                                 </div>
                             </div>
                         </Link>
-                        <Link to=""> 
+                        <Link to="/Details"> 
                             <div className="city-img1"><img src={require("../img/index14.jpg")}/>
                                 <div className="img2-child">
                                     <h3>上海</h3>
@@ -857,7 +859,7 @@ componentDidMount(){
 				          <img src={require("../spimg/left_down.png")} /> 
 				     </div>
         </div>  
-     </Router>
+     
 </div>
         );
     }

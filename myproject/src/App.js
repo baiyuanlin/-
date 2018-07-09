@@ -11,9 +11,11 @@ import './App.css';
 import Special from './special';
 import Spbieshu from './spbieshu';
 import Spsearch from './spsearch';
-import Find from './component/find'
-import Hedetail from './component/hedetail'
-import Sqyd from './component/sqyd'
+import Find from './component/find';
+import Hedetail from './component/hedetail';
+import Sqyd from './component/sqyd';
+import Room from './room';
+import Details from './Details';
 import $ from 'jquery'
 import './mock/data'
 import {BrowserRouter as Router,Route,Redirect,Switch,Link,IndexRoute} from 'react-router-dom'
@@ -85,6 +87,8 @@ class App extends Component {
 							<Route path="/hedetail/:id" component={Hedetail}></Route>
 
 							<Route path="/sqyd" component={Sqyd}></Route>
+                            <Route path="/Details" component={Details}></Route>
+                            <Route path="/room/:id" component={Room}></Route>
 					
 							
 						
