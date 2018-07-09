@@ -25,16 +25,21 @@ class Find extends React.Component {
                 totalPage:""//总页码
             }
         }
-        // this.getCurrentPage = this.getCurrentPage.bind(this)
+        this.getCurrentPage = this.getCurrentPage.bind(this)
     }
     
-    // getCurrentPage(currentPage) {
+    getCurrentPage(currentPage) {
        
-    //     this.setState({
-    //         arr:this.state.arr[currentPage-1]
-    //     })
-    //     console.log(this.state)
-    // }
+        // this.setState({
+        //     arr:this.state.arr[currentPage-1]
+        // })
+        console.log("aa")
+var _this=this;
+        setTimeout(function(){
+            console.log(_this.state)
+
+        },2000)
+    }
     componentDidMount(){
         $(".hemain .mainul").eq(0).show()
         $('.titul li').click(function(){
@@ -290,7 +295,7 @@ class Find extends React.Component {
                                 <a>&lt;上一页</a>
                             </li>
                             <li className="heyeshu">
-                                
+                            <a>1</a>
                             </li>
                             <li className="heprev">
                                  <a>下一页&gt;</a>

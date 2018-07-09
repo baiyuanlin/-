@@ -408,7 +408,7 @@ componentDidMount(){
         return (
             
     <div>
-        <Router>
+     
             <div>
                
                <div className="banner-center">
@@ -857,7 +857,7 @@ componentDidMount(){
 				          <img src={require("../spimg/left_down.png")} /> 
 				     </div>
         </div>  
-     </Router>
+     
 </div>
         );
     }

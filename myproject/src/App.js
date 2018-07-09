@@ -72,9 +72,8 @@ class App extends Component {
 					<div>
 						
 					    <Switch>
-							{/* <Route component={Index}></Route> */}
 							<Route path="/index" component={Index}>
-								{/* <Redirect from="/" to="/index"></Redirect>    */}
+							
 							</Route>
 
 							
@@ -89,7 +88,7 @@ class App extends Component {
 							
 						
 
-						
+						<Redirect to="/index"></Redirect>
 						
 				
 				

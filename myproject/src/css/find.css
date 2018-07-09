@@ -64,6 +64,7 @@ a{
 .findbanner{
    /* width: 100%; */
    height: 376px;
+   margin-top: 58px;
 
 }
 .findbanner ul{
@@ -408,4 +409,469 @@ li{
 
 
 
+/*  sqyd*/
+
+.sqtop{
+    height:58px;
+    width: 100%;
+   }
+   .sqmianleft{
+       float: left;
+       height: 833px;
+       width: 870px;
+       padding-bottom: 100px;
+       /* border: 1px solid red; */
+   }
+   .xqmain{
+       overflow: hidden;
+       width: 1200px;
+       margin: 0 auto;
+   }
+   .sqmianright{
+       float: right;
+       width: 300px;
+       height: 455px;
+       /* border: 1px solid #000000; */
+   }
+   .sqnav{
+       margin-top: 30px;
+       height: 110px;
+       width: 870px;
+       border-bottom:1px solid #d2d2d2;
+   }
+   .order_head_left h2 {
+    font-size: 26px;
+    color: #666666;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.order_head_left{
+    width: 140px;
+    float: left;
+}
+.order_head_left p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #afb4b9;
+}
+.order_head_right{
+    float: right;
+}
+.sqddxx{
+    margin-top: 22px;
+    padding-bottom: 24px;
+    height: 110px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.order_class_title {
+    font-size: 16px;
+    color: #666;
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.order_date {
+    width: 892px;
+}
+.order_date li {
+    width: 223px;
+    float: left;
+    position: relative;
+}
+.order_date li span {
+    font-size: 12px;
+    color: #666;
+    line-height: 12px;
+}
+.order_date_wrap {
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    color: #aaaaaa;
+    display: inline-table;
+    margin: 5px 0 0;
+    position: relative;
+}
+.order_date_wrap {
+    border-radius: 5px;
+}
+.order_date_wrap input {
+    width: 188px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    margin-left: 10px;
+    color: #666;
+    border: 0;
+    display: table-cell;
+}
+.person_menu, .room_menu {
+    position: absolute;
+    width: 200px;
+    border: 1px solid #DDDDDD;
+    background: #FFFFFF;
+    top: 69px;
+    display: none;
+    z-index: 1;
+}
+.person_menu a, .room_menu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #666;
+}
+#roomnumber, #rentnumber {
+    background: url(../img/sanjiao.jpg) no-repeat 170px;
+}
+.person_menu{
+    display: none;
+}
+.w_mT28 {
+    margin-top: 22px;
+}
+.order_class {
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 24px;
+}
+.order_class_title {
+    font-size: 16px;
+    color: #666;
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.order_class_title span {
+    position: relative;
+}
+
+.insur_t {
+    float: right;
+    display: block;
+    height: 23px;
+    line-height: 22px;
+    padding: 0 10px;
+    background: #666;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 11px;
+}
+
+
+.name_rz {
+    float: right;
+    display: block;
+    height: 23px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #52a7ff;
+    padding: 0 10px;
+    font-size: 12px;
+    border-radius: 11px;
+    margin-right: 10px;
+}
+.name_rz i {
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+   
+    /* background: url(../../images/order_icon.png) no-repeat -5px -21px; */
+    margin: 3px 7px 0 0;
+}
+.check_infor ul {
+    margin-bottom: 18px;
+}
+.insurance a{
+    color:#48b3fb;
+}
+.check_infor_title span {
+    display: block;
+    float: left;
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+}
+.name {
+    width: 104px;
+    margin-right: 22px;
+}
+.person_id {
+    width: 268px;
+    margin-right: 22px;
+}
+.gender {
+    width: 44px;
+    margin-right: 22px;
+}
+.birth {
+    width: 102px;
+}
+.insurance {
+    width: 209px;
+    text-align: center;
+    position: relative;
+}
+.insurance  a{
+    color: #48b3fb;
+}
+.operation {
+    width: 70px;
+    text-align: center;
+}
+.add_infor {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+.add_infor div {
+    border-radius: 2px;
+    float: left;
+    background: #fff;
+    margin-right: 20px;
+    border: 1px solid #DDDDDD;
+    overflow: hidden;
+    text-align: center;
+}
+.add_infor div input {
+    border: 0;
+    width: 100%;
+    padding: 5px;
+}
+.fullname{
+    width:102px;
+}
+.idcard {
+    width: 266px;
+}
+.infor_gender {
+    width: 42px;
+    height: 29px;
+}
+.birthday {
+    width: 100px;
+    height: 29px;
+}
+.add_infor  .insur {
+    width: 146px;
+    background: none;
+    border: none;
+    padding: 5px;
+    color: #ff572d;
+}
+.add_infor  .delete {
+    width: 33px;
+    padding: 5px 2px;
+    background: #666;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 38px;
+}
+.choice_often {
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #666;
+}
+.czrk{
+    
+        float: left;
+        padding: 3px;
+        padding-left: 0;
+        margin: 5px;
+        margin-left: 0;
+        font-size: 12px;
+    
+}
+.style1{
+
+float: left;
+    padding: 2px 0 2px 9px;
+    border-radius: 2px;
+    margin: 5px;
+    font-size: 12px;
+}
+.bx_plan {
+    font-size: 12px;
+    width: 870px;
+    height: 16px;
+    padding-top: 30px;
+}
+.add_person {
+    background: #fd7365;
+    border-radius: 2px;
+    padding: 5px;
+    float: right;
+    
+}
+.add_person .add {
+    width: 104px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.add_infor div input {
+    border: 0;
+    width: 100%;
+    padding: 5px;
+}
+.bx_plan input {
+    vertical-align: middle;
+}
+label {
+    cursor: default;
+}
+.choice_often{
+    /* height: 20px; */
+    width:870px;
+    
+}
+.bx_plan{
+    /* border:1px solid red; */
+    margin-top: 40px;
+}
 /*  */
+.w_mT28 {
+    margin-top: 22px;
+}
+.order_class {
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 24px;
+}
+.order_class_title {
+    font-size: 16px;
+    color: #666;
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.count_open {
+    font-size: 14px;
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 22px;
+    position: relative;
+}
+.count_open a {
+    float: right;
+    color: #AAAAAA;
+}
+.count_open span {
+    cursor: pointer;
+}
+.count_open {
+    font-size: 14px;
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 22px;
+    position: relative;
+}
+.count_open i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    /* background: url(../../images/order_icon.png) no-repeat -25px 0px; */
+}
+span .ky_yz {
+    color: #FD7365;
+}
+em.bonus_num {
+    margin: 0;
+}
+.count_open em {
+    color: #FD7365;
+    margin-left: 10px;
+}
+a.qx_coupon {
+    float: none;
+    background: #52a7ff;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+.remarks {
+    margin-top: 25px;
+}
+.remarks textarea {
+    border-radius: 5px;
+    width: 100%;
+    height: 46px;
+    font-size: 12px;
+    padding: 5px;
+    color: #555;
+    border: solid 1px #dddddd;
+    resize: none;
+}
+textarea {
+    overflow: auto;
+}
+.qx_coupon{
+    display: none;
+}
+#div_youhui{
+    display: none;
+}
+.submit {
+    margin-top: 32px;
+    position: relative;
+}
+.sub_order {
+    box-shadow: 0px 0px 10px #fd7365;
+    border-radius: 2px;
+    display: block;
+    background: #FD7365;
+    color: #FFFFFF;
+    width: 138px;
+    height: 52px;
+    text-align: center;
+    line-height: 50px;
+}
+.payment {
+    position: absolute;
+    right: 0;
+}
+.payment span {
+    color: #666;
+    display: inline-block;
+}
+.real-payment {
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+em {
+    color: #fd3300;
+    font-style: normal;
+}
+.payment span {
+    color: #666;
+    display: inline-block;
+}
+.pay-disicount {
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+em {
+    color: #fd3300;
+    font-style: normal;
+}
+.submit p {
+    height: 14px;
+    padding: 20px 0 0;
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+.submit p a {
+    color: #67a8f8;
+}
