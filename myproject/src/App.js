@@ -108,9 +108,8 @@ componentDidUpdate(){
 					<div>
 						
 					    <Switch>
-							{/* <Route component={Index}></Route> */}
 							<Route path="/index" component={Index}>
-								{/* <Redirect from="/" to="/index"></Redirect>    */}
+							
 							</Route>
 
 							
@@ -127,7 +126,14 @@ componentDidUpdate(){
 							
 						
 
+
 						
+
+						<Redirect to="/index"></Redirect>
+						
+				
+				
+
          			
 								{/* <IndexRoute component={Index}/> */}
 									

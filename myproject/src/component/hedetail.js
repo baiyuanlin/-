@@ -10,8 +10,39 @@ import $ from 'jquery'
 class Hedetail extends React.Component{
     constructor(props) {
         super(props);
+        this.state={
+            arr:[],
+            
+        }
         
 
+    }
+    componentDidMount(){
+        var _this=this
+        console.log(this.props.match.params)
+        $.ajax({
+            type:"get",
+            url:'http://www.baidu.com/api/a',
+            async:true,
+            dataType:"json",
+            success:function(data){
+                var data=data.user
+               var id=_this.props.match.params.id
+               
+                console.log(data[0].id,id)
+                for(var i=0;i<data.length;i++){
+                    if(id==data[i].id){
+                         _this.setState({arr:data[i]})  
+                         console.log(_this.state) 
+                    }else{
+                        console.log("不一样")
+                    }
+                }
+           
+
+            }
+
+        })
     }
    
     render(){
@@ -27,10 +58,14 @@ class Hedetail extends React.Component{
                             <a>超详细青岛旅行攻略</a>
                         </div>
                         <div className="heconcenter">
+                        
+
+                       
                             <div className="hecentleft">
                                 <div>
                                     <div className="storytitle">
                                         超详细青岛旅行攻略
+                                        {/* {this.state.arr.title} */}
                                         
                                     </div>
                                     <div className="heruedu">
