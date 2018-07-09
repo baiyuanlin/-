@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import logo from './logo.svg';
+
 import './css/index.css'
 import './css/reset.css'
 import './css/double-date.css'
@@ -11,29 +11,66 @@ import './App.css';
 import Special from './special';
 import Spbieshu from './spbieshu';
 import Spsearch from './spsearch';
+
 import Find from './component/find';
 import Hedetail from './component/hedetail';
 import Sqyd from './component/sqyd';
 import Room from './room';
 import Details from './Details';
+
+import Find from './component/find'
+import Hedetail from './component/hedetail'
+import Sqyd from './component/sqyd'
+import Register from './register'
 import $ from 'jquery'
 import './mock/data'
+import Login from './login'
+import Store from './Store';
 import {BrowserRouter as Router,Route,Redirect,Switch,Link,IndexRoute} from 'react-router-dom'
 
 
 class App extends Component {
 	constructor(props) {
-		super(props);
+    super(props);
+    this.state={
+      str:Store.getState()
+        }
+      this.onchanges=this.onchanges.bind(this)
 		
-	}
+  }
+  onchanges(){
+   
+  
+      this.setState({str:Store.getState()})
+   
+   
+      console.log(this.state.str.user);
+     
+}
+componentDidUpdate(){
+  sessionStorage.setItem('user',this.state.str.user);
+ 
+  if(this.state.str){
+   
+    $('.hearder-right1').css({display:'none'});
+    $('.username').css({display:'block'})
+  }else{
+    $('.hearder-right1').css({display:'block'});
+    $('.username').css({display:'none'})
+  }
+}
 	componentDidMount(){
+    
+    Store.subscribe(this.onchanges);
+    this.setState({str:{user:sessionStorage.getItem('user')}})
+    
+
 		$.ajax({
 			type:"get",
 			url:"http://www.baidu.com/api/a",
-			async:true,
+			async:false,
 			dataType:"json",
 			success:function(data){
-				console.log(data)
 			}
 
 		})
@@ -61,10 +98,14 @@ class App extends Component {
                     <div className="hearder-right1">
                         <a href="" className="fangyuan">免费发布房源</a>
                         <div className="login">
-                            <a href="">登录</a>
+                          <Link to="/login">登录</Link>
                            .
-                            <a href="">注册</a>
+                            <Link to="/register">注册</Link>
                         </div>
+                    </div>
+                    <div className="username">
+                      <h3> Hi 欢迎回来！ {this.state.str.user}</h3>
+                      <button>我要成为房东</button>
                     </div>
                </div>
              
@@ -74,9 +115,8 @@ class App extends Component {
 					<div>
 						
 					    <Switch>
-							{/* <Route component={Index}></Route> */}
 							<Route path="/index" component={Index}>
-								{/* <Redirect from="/" to="/index"></Redirect>    */}
+							
 							</Route>
 
 							
@@ -87,16 +127,24 @@ class App extends Component {
 							<Route path="/hedetail/:id" component={Hedetail}></Route>
 
 							<Route path="/sqyd" component={Sqyd}></Route>
+
                             <Route path="/Details" component={Details}></Route>
                             <Route path="/room/:id" component={Room}></Route>
+              <Route path="/register" component={Register}></Route>
+              <Route path="/login" component={Login}></Route>
+
 					
 							
 						
 
+
 						
+
+						<Redirect to="/index"></Redirect>
 						
 				
 				
+
          			
 								{/* <IndexRoute component={Index}/> */}
 									

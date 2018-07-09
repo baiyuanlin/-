@@ -5,6 +5,7 @@ import '../css/double-date.css'
 import $ from 'jquery';
 import {BrowserRouter as Router,Route,Link,Redirect} from 'react-router-dom';
 import { Menu, Dropdown, Icon, Carousel} from 'antd';
+import Store from '../Store';
 const menu = (
     <Menu>
       <Menu.Item key="0">
@@ -28,11 +29,23 @@ const menu = (
   
 class Index extends Component {
     constructor(props){
-        super(props)
+        super(props);
+        this.state={
+           str:Store.getState()
+        }
+        this.onchanges=this.onchanges.bind(this)
+    }
+    onchanges(){
+        this.setState({str:Store.getState()})
+        // console.log(this.state.str);
     }
 componentDidMount(){
+
     // 数据
    
+
+ 
+    Store.subscribe(this.onchanges)
     var oimg=document.getElementsByClassName('bt-img')[0];
     var img=oimg.children;
     var oul=document.getElementsByClassName('bt-anv')[0];
@@ -410,11 +423,14 @@ componentDidMount(){
         return (
             
     <div>
+
         
+     
+
             <div>
                
                <div className="banner-center">
-               
+               {/* 欢迎<h2>{this.state.str.user}</h2> */}
                 <div id="sliderBox">
                         <ul id="sliderList">
                             <li><Link to="" title="世界杯"><img src={require("../img/index57.jpg")}/></Link></li>

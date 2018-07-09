@@ -73,6 +73,31 @@ li{
     margin-right: 30px;
     
 }
+.username{
+    float: right;
+    height: 45px;
+    line-height:45px;
+    display:none;
+    width:350px;
+    overflow: hidden;
+}
+.username h3{
+    width:230px;
+    float:left;
+}
+.username button{
+    float:right;
+    margin-right:10px;
+    background:red;
+    outline: none;
+    border-radius: 10px;
+    height:30px;
+    width:100px;
+    margin-top:10px;
+    color:#fff;
+    line-height:30px;
+    border:none;
+}
 .hearder-right1 .fangyuan{
     display: inline-block;
     padding: 0 16px;
