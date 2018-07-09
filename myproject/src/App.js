@@ -11,6 +11,13 @@ import './App.css';
 import Special from './special';
 import Spbieshu from './spbieshu';
 import Spsearch from './spsearch';
+
+import Find from './component/find';
+import Hedetail from './component/hedetail';
+import Sqyd from './component/sqyd';
+import Room from './room';
+import Details from './Details';
+
 import Find from './component/find'
 import Hedetail from './component/hedetail'
 import Sqyd from './component/sqyd'
@@ -120,8 +127,12 @@ componentDidUpdate(){
 							<Route path="/hedetail/:id" component={Hedetail}></Route>
 
 							<Route path="/sqyd" component={Sqyd}></Route>
+
+                            <Route path="/Details" component={Details}></Route>
+                            <Route path="/room/:id" component={Room}></Route>
               <Route path="/register" component={Register}></Route>
               <Route path="/login" component={Login}></Route>
+
 					
 							
 						

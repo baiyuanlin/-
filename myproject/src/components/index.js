@@ -40,7 +40,11 @@ class Index extends Component {
         // console.log(this.state.str);
     }
 componentDidMount(){
-    
+
+    // 数据
+   
+
+ 
     Store.subscribe(this.onchanges)
     var oimg=document.getElementsByClassName('bt-img')[0];
     var img=oimg.children;
@@ -419,7 +423,10 @@ componentDidMount(){
         return (
             
     <div>
+
+        
      
+
             <div>
                
                <div className="banner-center">
@@ -497,7 +504,7 @@ componentDidMount(){
                                 </div>
                             </div>
                         </Link>
-                        <Link to=""> 
+                        <Link to="/Details"> 
                             <div className="city-img1"><img src={require("../img/index14.jpg")}/>
                                 <div className="img2-child">
                                     <h3>上海</h3>

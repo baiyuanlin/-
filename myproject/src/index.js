@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import './Details.css';
+import './room.css';
 import App from './App';
 import Special from './special';
 // import './index.css';
