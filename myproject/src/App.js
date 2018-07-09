@@ -12,15 +12,14 @@ import Special from './special';
 import Spbieshu from './spbieshu';
 import Spsearch from './spsearch';
 
-import Find from './component/find';
-import Hedetail from './component/hedetail';
-import Sqyd from './component/sqyd';
+import Find from '../src/component/find';
+import Hedetail from '../src/component/hedetail';
+import Sqyd from '../src/component/sqyd';
 import Room from './room';
 import Details from './Details';
 
-import Find from './component/find'
-import Hedetail from './component/hedetail'
-import Sqyd from './component/sqyd'
+
+
 import Register from './register'
 import $ from 'jquery'
 import './mock/data'
